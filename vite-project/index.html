@@ -1,132 +1,364 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Dark Mode</title>
-    <link rel="stylesheet" href="styles.css"> 
-    <script type="module" src="/src/main.jsx"></script> 
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/src/main.jsx"></script>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="mode-toggle">
-                <span>Dark Mode</span>
-                <span class="separator">|</span>
-                <span><span class="blue-text">TÜRKÇE</span>'YE GEÇ</span>
-            </div>
+      <div class="container">
+        <div class="mode-toggle">
+          <button class="dark-mode-btn" id="darkModeButton">
+            <span id="darkModeIcon">🌙</span>
+          </button>
+          <span class="en-text">Dark Mode</span>
+          <span class="tr-text">Karanlık Mod</span>
+          <span class="separator">|</span>
+          <span id="turkish-toggle">
+            <span class="en-text">Switch to Turkish</span>
+            <span class="tr-text">TÜRKÇE'YE GEÇ</span>
+          </span>
         </div>
-        <nav>
-            <div class="logo">
-                <span class="circle">G</span>
-            </div>
-            <div class="nav-links">
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#hire-me">Hire Me</a>
-            </div>
-        </nav>
+      </div>
+      <nav>
+        <div class="logo">
+          <span class="circle">G</span>
+        </div>
+        <div class="nav-links">
+          <a href="#skills" class="en-text">Skills</a>
+          <a href="#projects" class="en-text">Projects</a>
+          <a href="#hire-me" class="en-text">Hire Me</a>
+          <a href="#skills" class="tr-text">Yetenekler</a>
+          <a href="#projects" class="tr-text">Projeler</a>
+          <a href="#hire-me" class="tr-text">Beni Kirala</a>
+        </div>
+      </nav>
     </header>
 
     <section class="intro">
-        <div class="intro-text">
-            <div class="header-title">
-                <div class="divider"></div> <!-- Yatay çizgi burada -->
-                <h5 class="blue-text">Gizem Güneren</h5>
-            </div>
-            <h2 class="creative-title">Creative Thinker<br>Minimalism Lover</h2> <!-- Yazı burada -->
-            <p>
-                Hello, I am Gizem. I am a frontend developer. If you are looking for a developer who can offer you exactly what you think, let's make it happen together.
-            </p>
-            <div class="buttons">
-                <button>Hire Me</button>
-                <a href="#" class="btn-github">Github</a>
-                <a href="#" class="btn-linkedin">LinkedIn</a>
-            </div>
+      <div class="intro-text">
+        <div class="header-title">
+          <div class="divider"></div>
+          <h5 class="blue-text">Gizem Güneren</h5>
         </div>
-        <div class="intro-image">
-        <img src="https://drive.google.com/uc?export=view&id=16uWVK4EIDAInxbnIQ42wGI2y4FHWOyLG" alt="Profil Resmi" style="width:300px;">
-    </div>
-    
+        <h1 class="creative-title">
+          <span class="en-text">Creative Thinker<br />Minimalism Lover</span>
+          <span class="tr-text">Yaratıcı Düşünür<br />Minimalizm Tutkunu</span>
+        </h1>
+        <p class="square-box">
+          <span class="en-text">
+            Hello, I am Gizem. I am a frontend developer. If you are looking for
+            a developer who can offer you exactly what you think, let's make it
+            happen together.
+          </span>
+          <span class="tr-text">
+            Merhaba, ben Gizem. Ben bir frontend geliştiricisiyim. Tam olarak
+            düşündüğünüz şeyi size sunabilecek bir geliştirici arıyorsanız,
+            gelin bunu birlikte gerçekleştirelim.
+          </span>
+        </p>
+        <div class="buttons">
+          <button class="en-text">Hire Me</button>
+          <button class="tr-text">Beni Kirala</button>
+          <a href="https://github.com/gizem-guneren" class="btn-github"
+            >Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/gizem-g%C3%BCneren-a23a58336/"
+            class="btn-linkedin"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <div class="intro-image">
+        <img
+          src="/src/assets/image-1.jpeg"
+          alt="Profil Resmi"
+          style="width: 300px"
+        />
+      </div>
     </section>
 
     <section id="skills" class="skills">
-        <h3>Skills</h3>
-        <div class="skill-list">
-            <div>JavaScript</div>
-            <div>React.js</div>
-            <div>Node.js</div>
+      <h3>
+        <span class="en-text">Skills</span>
+        <span class="tr-text">Yetenekler</span>
+      </h3>
+      <div class="skill-list">
+        <div class="skill-item">
+          <div>JavaScript</div>
+          <p>
+            <span class="en-text">
+              JavaScript is one of the widely used programming languages for web
+              development. It is used to create dynamic and interactive web
+              pages.
+            </span>
+            <span class="tr-text">
+              JavaScript, web geliştirme için yaygın olarak kullanılan bir
+              programlama dilidir. Dinamik ve etkileşimli web sayfaları
+              oluşturmak için kullanılır.
+            </span>
+          </p>
         </div>
+        <div class="skill-item">
+          <div>React.js</div>
+          <p>
+            <span class="en-text">
+              React.js is a user interface (UI) library developed by Facebook.
+              It is widely used to create single-page applications (SPA).
+            </span>
+            <span class="tr-text">
+              React.js, Facebook tarafından geliştirilen bir kullanıcı arayüzü
+              (UI) kütüphanesidir. Genellikle tek sayfa uygulamaları (SPA)
+              oluşturmak için kullanılır.
+            </span>
+          </p>
+        </div>
+        <div class="skill-item">
+          <div>Node.js</div>
+          <p>
+            <span class="en-text">
+              Node.js is a platform that allows running JavaScript on the server
+              side. It has an asynchronous and event-driven structure, which
+              makes it possible to develop highly efficient and scalable network
+              applications.
+            </span>
+            <span class="tr-text">
+              Node.js, JavaScript'i sunucu tarafında çalıştırmaya olanak tanıyan
+              bir platformdur. Asenkron ve olay odaklı yapısı, yüksek verimli ve
+              ölçeklenebilir ağ uygulamaları geliştirmeyi mümkün kılar.
+            </span>
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="profile">
-        <h3>Profile</h3>
-        <div class="profile-details">
-            <div class="profile-info">
-                <h4>Profile</h4>
-                <p>Doğum Tarihi: 16.08.1997</p>
-                <p>İkamet Şehri: İzmir</p>
-                <p>Eğitim Durumu: Doğuş Üniversitesi Aşçılık / Ege Üniversitesi Meyve ve Sebze İşleme Teknolojisi</p>
-                <p>Mezuniyet Yılı: 2019 - 2022</p>
-                <p>Tercih Ettiği Rol: Frontend, UI</p>
-            </div>
-            <div class="about-me">
-                <h4>About Me</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet lobortis elit, aliquam volutpat mi nisi eu.</p>
-            </div>
+      <div class="profile-divider"></div>
+      <h3>
+        <span class="en-text">Profile</span>
+        <span class="tr-text">Profil</span>
+      </h3>
+      <div class="profile-details">
+        <div class="profile-info">
+          <h4>
+            <span class="en-text">Profile</span>
+            <span class="tr-text">Profil</span>
+          </h4>
+          <p><span class="bold-black">Doğum Tarihi:</span> 16.08.1997</p>
+          <p><span class="bold-black">İkamet Şehri:</span> İzmir</p>
+          <p>
+            <span class="bold-black">Eğitim Durumu:</span> Doğuş Üniversitesi
+            Aşçılık / Ege Üniversitesi Meyve ve Sebze İşleme Teknolojisi
+          </p>
+          <p><span class="bold-black">Mezuniyet Yılı:</span> 2019 - 2022</p>
+          <p><span class="bold-black">Tercih Ettiği Rol:</span> Frontend, UI</p>
         </div>
+        <div class="about-me">
+          <h4>
+            <span class="en-text">About Me</span>
+            <span class="tr-text">Hakkımda</span>
+          </h4>
+          <p>
+            <span class="en-text">
+              I started my career in the food field after graduating from two
+              different universities. However, thanks to my constant focus on
+              self-improvement and my desire to be in the developing age of
+              technology, I directed myself to improve myself in the frontend
+              field.
+            </span>
+            <span class="tr-text">
+              İki farklı üniversiteden mezun olduktan sonra kariyerime gıda
+              sektöründe başladım. Ancak, sürekli olarak kendimi geliştirme
+              odaklı olmam ve teknolojinin gelişen çağında yer almak isteğim
+              sayesinde, kendimi frontend alanında geliştirmeye yöneldim.
+            </span>
+          </p>
+          <p>
+            <span class="en-text">
+              I think I will go further every day with the knowledge I have
+              learned in this field.
+            </span>
+            <span class="tr-text">
+              Bu alanda öğrendiğim bilgilerle her gün daha da ileri gideceğimi
+              düşünüyorum.
+            </span>
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="projects">
-        <h3>Projects</h3>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="workintech.png" alt="Workintech">
-                <h4>Workintech</h4>
-                <p>Project description goes here.</p>
-                <button>React</button>
-                <button>Redux</button>
-                <button>Axios</button>
-                <div class="project-links">
-                    <a href="#">Github</a>
-                    <a href="#">View Site</a>
-                </div>
-            </div>
-            <div class="project-item">
-                <img src="random-jokes.png" alt="Random Jokes">
-                <h4>Random Jokes</h4>
-                <p>Project description goes here.</p>
-                <button>React</button>
-                <button>Redux</button>
-                <button>Axios</button>
-                <div class="project-links">
-                    <a href="#">Github</a>
-                    <a href="#">View Site</a>
-                </div>
-            </div>
-            <div class="project-item">
-                <img src="journey.png" alt="Journey">
-                <h4>Journey</h4>
-                <p>Project description goes here.</p>
-                <button>React</button>
-                <button>Redux</button>
-                <button>Axios</button>
-                <div class="project-links">
-                    <a href="#">Github</a>
-                    <a href="#">View Site</a>
-                </div>
-            </div>
+      <div class="divider"></div>
+      <h2>
+        <span class="en-text">Projects</span>
+        <span class="tr-text">Projeler</span>
+      </h2>
+      <div class="project-list">
+        <div class="project-item">
+          <div class="image-container">
+            <img src="/src/assets/image-2.jpeg" alt="Workintech" />
+          </div>
+          <h4>Workintech</h4>
+          <p>
+            <span class="en-text">
+              This project shows the order page of a pizza shop to the user.
+            </span>
+            <span class="tr-text">
+              Bu proje, bir pizza dükkanının sipariş sayfasını kullanıcıya
+              gösterir.
+            </span>
+          </p>
+          <div class="buttons">
+            <button>Css</button>
+            <button>Html</button>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/gizem-guneren/gizem" target="_blank"
+              >Github</a
+            >
+            <a href="#">View Site</a>
+          </div>
         </div>
+        <div class="project-item">
+          <div class="image-container">
+            <img src="/src/assets/image-3.jpeg" alt="Random Jokes" />
+          </div>
+          <h4>Pizza Project</h4>
+          <p>
+            <span class="en-text">
+              I developed my previous pizza project and made it interactive, to
+              ease the transition between pages and offer manual selections to
+              the user.
+            </span>
+            <span class="tr-text">
+              Önceki pizza projemi geliştirerek etkileşimli hale getirdim,
+              sayfalar arasında geçişi kolaylaştırmak ve kullanıcılara manuel
+              seçimler sunmak için.
+            </span>
+          </p>
+          <div class="buttons">
+            <button>React</button>
+            <button>Redux</button>
+            <button>Axios</button>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/gizem-guneren/pizza2.git"
+              target="_blank"
+              >Github</a
+            >
+            <a href="#">View Site</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <p>Let's work together on your next product.</p>
-        <p>📧 gizemguneren6@gmail.com</p>
-        <div class="footer-links">
-            <a href="#">Personal Blog</a>
-            <a href="#">Github</a>
-            <a href="#">LinkedIn</a>
+      <p class="footer-title">
+        <span class="en-text">Let's work together on</span>
+        <span class="tr-text">Gel birlikte çalışalım</span>
+      </p>
+      <p class="footer-subtitle">
+        <span class="en-text">your next product.</span>
+        <span class="tr-text">senin sonraki ürünün.</span>
+      </p>
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="mailto:gizemguneren6@gmail.com" class="email"
+            >📧 gizemguneren6@gmail.com</a
+          >
         </div>
+        <div class="footer-right">
+          <div class="footer-links">
+            <a href="#" class="personal-blog">Personal Blog</a>
+            <a href="https://github.com/gizem-guneren" class="btn-github"
+              >Github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/gizem-g%C3%BCneren-a23a58336/"
+              class="btn-linkedin"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script type="module">
+      document.addEventListener('DOMContentLoaded', () => {
+        const turkishToggle = document.getElementById('turkish-toggle');
+        const darkModeButton = document.getElementById('darkModeButton');
+        const darkModeIcon = document.getElementById('darkModeIcon');
+
+        let isTurkish = localStorage.getItem('lang') === 'tr';
+        let isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+        // Dil değişimi
+        function toggleLanguage() {
+          if (isTurkish) {
+            document
+              .querySelectorAll('.tr-text')
+              .forEach((el) => (el.style.display = 'none'));
+            document
+              .querySelectorAll('.en-text')
+              .forEach((el) => (el.style.display = 'inline'));
+            turkishToggle.innerHTML = "TÜRKÇE'YE GEÇ";
+            localStorage.setItem('lang', 'en');
+          } else {
+            document
+              .querySelectorAll('.tr-text')
+              .forEach((el) => (el.style.display = 'inline'));
+            document
+              .querySelectorAll('.en-text')
+              .forEach((el) => (el.style.display = 'none'));
+            turkishToggle.innerHTML = "ENGLISH'E GEÇ";
+            localStorage.setItem('lang', 'tr');
+          }
+          isTurkish = !isTurkish;
+        }
+
+        // Karanlık mod geçişi
+        function toggleDarkMode() {
+          document.body.classList.toggle('dark-mode');
+          if (isDarkMode) {
+            darkModeIcon.innerHTML = '🌙'; 
+            localStorage.setItem('darkMode', 'false');
+          } else {
+            darkModeIcon.innerHTML = '☀️';
+            localStorage.setItem('darkMode', 'true');
+          }
+          isDarkMode = !isDarkMode;
+        }
+
+        
+        if (isTurkish) {
+          document
+            .querySelectorAll('.tr-text')
+            .forEach((el) => (el.style.display = 'inline'));
+          document
+            .querySelectorAll('.en-text')
+            .forEach((el) => (el.style.display = 'none'));
+        } else {
+          document
+            .querySelectorAll('.tr-text')
+            .forEach((el) => (el.style.display = 'none'));
+          document
+            .querySelectorAll('.en-text')
+            .forEach((el) => (el.style.display = 'inline'));
+        }
+
+        if (isDarkMode) {
+          document.body.classList.add('dark-mode');
+          darkModeIcon.innerHTML = '☀️';
+        }
+
+        turkishToggle.addEventListener('click', toggleLanguage);
+        darkModeButton.addEventListener('click', toggleDarkMode);
+      });
+    </script>
+  </body>
 </html>
